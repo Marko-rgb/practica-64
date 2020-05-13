@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>p64</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <div style="width:200px;height:200px;background:#ff0000" id="div1">
+  </div>
+
+<script>
+  addEventListener('DOMContentLoaded',inicio,false);
+
+  function inicio()
+  {
+    document.getElementById('div1').addEventListener('mousedown',presion1,false);
+    document.getElementById('div1').addEventListener('mouseup',presion2,false);
+  }
+
+  function presion1()
+  {
+    document.getElementById('div1').style.backgroundColor='#ffff00';
+  }
+
+  function presion2()
+  {
+    document.getElementById('div1').style.backgroundColor='#ff0000';
+  }
+</script>
+  
+</body>
+</html>
